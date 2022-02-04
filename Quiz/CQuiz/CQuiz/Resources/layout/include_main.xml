@@ -1,0 +1,810 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:background="#EEEEEE"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+
+	<android.support.v7.widget.Toolbar
+		android:id="@+id/toolbar1"
+		android:theme="@style/AppTheme.DarkAppBar"
+		android:elevation="4dp"
+		android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"/>
+	
+	<LinearLayout
+		android:layout_marginBottom="4dp"
+		android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+		android:orientation="horizontal"
+		>
+	
+		<TextView
+		android:fontFamily="@drawable/RobotoBold"
+		android:layout_marginBottom="2dp"
+		android:layout_marginLeft="16dp"
+		android:gravity="center_vertical"
+		android:textSize="17sp"
+		android:layout_width="wrap_content"
+		android:layout_height="match_parent"
+		android:textColor="#2d2d2d"
+		android:text="Опыт:"/>
+
+		<ProgressBar
+		android:progressDrawable="@drawable/progresstint"
+		android:indeterminate="false"
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:max="150"
+        android:minWidth="200dp"
+        android:progress="3" />
+
+		<TextView
+		android:fontFamily="@drawable/RobotoBold"
+		android:id="@+id/textViewlevels"
+		android:layout_marginBottom="2dp"
+		android:layout_marginLeft="25dp"
+		android:gravity="center_vertical"
+		android:textSize="17sp"
+		android:layout_width="wrap_content"
+		android:layout_height="match_parent"
+		android:textColor="#2d2d2d"
+		android:text="0/15"/>
+
+	</LinearLayout>
+
+	<ScrollView
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:scrollbars="vertical"
+		>
+		<LinearLayout
+			android:background="#EEEEEE"
+			android:orientation="vertical"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content">
+
+			<TextView
+				android:fontFamily="@drawable/RobotoBold"
+				android:layout_marginTop="15dp"
+				android:gravity="center"
+				android:textSize="20sp"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:textColor="#2d2d2d"
+				android:text="Выбирай Quiz"/>
+			<TextView
+				android:fontFamily="@drawable/RobotoLight"
+				android:gravity="center"
+				android:textSize="20sp"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:textColor="#2d2d2d"
+				android:text="Получай знания"/>
+
+			<android.support.v7.widget.CardView
+				android:layout_marginTop="10dp"
+				android:layout_gravity="center_horizontal"
+				android:layout_width="325dp"
+				android:layout_height="151dp"
+				app:cardElevation="2dp">
+
+				<LinearLayout
+					android:background="#32807B"
+					android:id="@+id/ZeroQuiz"
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:orientation="vertical">
+
+					<ImageView
+						android:tint="#000000"
+						android:id="@+id/image1age"
+						android:layout_marginTop="8dp"
+						android:layout_marginBottom="2dp"
+						android:src="@drawable/age1"
+						android:layout_width="100dp"
+						android:layout_height="100dp"
+						android:layout_gravity="center_horizontal"/>
+
+					<View
+						android:layout_width="match_parent"
+						android:layout_height="1dp"
+						android:background="#2d2d2d"/>
+
+					<TextView
+						android:fontFamily="@drawable/RobotoMedium"
+						android:textSize="16sp"
+						android:background="#06eade"
+						android:textColor="#2d2d2d"
+						android:layout_gravity="center_vertical"
+						android:gravity="center"
+						android:text="Пробный Quiz"
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"/>
+
+				</LinearLayout>
+
+			</android.support.v7.widget.CardView>
+
+			<GridLayout
+			android:layout_marginTop="0dp"
+			android:layout_gravity="center_horizontal"
+			android:padding="16dp"
+			android:rowCount="5"
+			android:columnCount="2"
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent">
+
+			<!-- First Row -->
+			<android.support.v7.widget.CardView
+				
+				android:layout_marginTop="10dp"
+				android:layout_marginRight="30dp"
+				android:layout_gravity="right"
+				android:layout_width="147dp"
+				android:layout_height="151dp"
+				app:cardElevation="2dp"
+				android:layout_marginBottom="10dp">
+
+				<LinearLayout
+					android:background="#2d2d2d"
+					android:id="@+id/FirstQuiz"
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:orientation="vertical">
+
+					<ImageView
+						android:tint="#ffffff"
+						android:id="@+id/image2age"
+						android:layout_marginTop="8dp"
+						android:layout_marginBottom="2dp"
+						android:src="@drawable/age2"
+						android:layout_width="100dp"
+						android:layout_height="100dp"
+						android:layout_gravity="center_horizontal"/>
+
+					<View
+						android:layout_width="match_parent"
+						android:layout_height="1dp"
+						android:background="#ffffff"/>
+
+					<TextView
+						android:fontFamily="@drawable/RobotoMedium"
+						android:textSize="14sp"
+						android:background="#06eade"
+						android:textColor="#2d2d2d"
+						android:layout_gravity="center_vertical"
+						android:gravity="center"
+						android:text="Введение"
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"/>
+
+				</LinearLayout>
+
+			</android.support.v7.widget.CardView>
+			<android.support.v7.widget.CardView
+				android:layout_marginTop="10dp"
+				app:cardElevation="2dp"
+				android:layout_marginBottom="10dp"
+				android:layout_gravity="left"
+				android:layout_width="147dp"
+				android:layout_height="151dp">
+
+				<LinearLayout
+					android:background="#06eade"
+					android:id="@+id/SecondQuiz"
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:orientation="vertical">
+
+					<ImageView
+						android:tint="#000000"
+						android:id="@+id/image3age"
+						android:layout_marginTop="8dp"
+						android:layout_marginBottom="2dp"
+						android:src="@drawable/age3"
+						android:layout_width="100dp"
+						android:layout_height="100dp"
+						android:layout_gravity="center_horizontal"/>
+
+					<View
+						android:layout_width="match_parent"
+						android:layout_height="1dp"
+						android:background="#ffffff"/>
+
+					<TextView
+						android:fontFamily="@drawable/RobotoMedium"
+						android:textSize="14sp"
+						android:background="#2d2d2d"
+						android:textColor="#ffffff"
+						android:layout_gravity="center_vertical"
+						android:gravity="center"
+						android:text="Hello World!"
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"/>
+
+				</LinearLayout>
+
+			</android.support.v7.widget.CardView>
+
+			<!-- Second Row -->
+			<android.support.v7.widget.CardView
+				
+				android:layout_marginTop="10dp"
+				android:layout_marginRight="30dp"
+				android:layout_gravity="right"
+				android:layout_width="147dp"
+				android:layout_height="151dp"
+				app:cardElevation="2dp"
+				android:layout_marginBottom="10dp">
+
+				<LinearLayout
+					android:background="#06eade"
+					android:id="@+id/ThirdQuiz"
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:orientation="vertical">
+
+					<ImageView
+						android:tint="#000000"
+						android:id="@+id/image4age"
+						android:layout_marginTop="8dp"
+						android:layout_marginBottom="2dp"
+						android:src="@drawable/age4"
+						android:layout_width="100dp"
+						android:layout_height="100dp"
+						android:layout_gravity="center_horizontal"/>
+
+					<View
+						android:layout_width="match_parent"
+						android:layout_height="1dp"
+						android:background="#ffffff"/>
+
+					<TextView
+						android:fontFamily="@drawable/RobotoMedium"
+						android:textSize="14sp"
+						android:textColor="#ffffff"
+						android:background="#2d2d2d"
+						android:layout_gravity="center_vertical"
+						android:gravity="center"
+						android:text="Переменные"
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"/>
+
+				</LinearLayout>
+
+			</android.support.v7.widget.CardView>
+			<android.support.v7.widget.CardView
+				android:layout_marginTop="10dp"
+				app:cardElevation="2dp"
+				android:layout_marginBottom="10dp"
+				android:layout_gravity="left"
+				android:layout_width="147dp"
+				android:layout_height="151dp">
+
+				<LinearLayout
+					android:background="#2d2d2d"
+					android:id="@+id/FourthQuiz"
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:orientation="vertical">
+
+					<ImageView
+						android:tint="#ffffff"
+						android:id="@+id/image5age"
+						android:layout_marginTop="8dp"
+						android:layout_marginBottom="2dp"
+						android:src="@drawable/age5"
+						android:layout_width="100dp"
+						android:layout_height="100dp"
+						android:layout_gravity="center_horizontal"/>
+
+					<View
+						android:layout_width="match_parent"
+						android:layout_height="1dp"
+						android:background="#dddddd"/>
+
+					<TextView
+						android:fontFamily="@drawable/RobotoMedium"
+						android:textSize="14sp"
+						android:background="#06eade"
+						android:textColor="#2d2d2d"
+						android:layout_gravity="center_vertical"
+						android:gravity="center"
+						android:text="Инициализация vs Присваивание"
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"/>
+
+				</LinearLayout>
+
+			</android.support.v7.widget.CardView>
+
+			<!-- Third Row -->
+			<android.support.v7.widget.CardView
+				
+				android:layout_marginTop="10dp"
+				android:layout_marginRight="30dp"
+				android:layout_gravity="right"
+				android:layout_width="147dp"
+				android:layout_height="151dp"
+				app:cardElevation="2dp"
+				android:layout_marginBottom="10dp">
+
+				<LinearLayout
+					android:background="#32807B"
+					android:id="@+id/FifthQuiz"
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:orientation="vertical">
+
+					<ImageView
+						android:tint="#000000"
+						android:id="@+id/image6age"
+						android:layout_marginTop="8dp"
+						android:layout_marginBottom="2dp"
+						android:src="@drawable/age6"
+						android:layout_width="100dp"
+						android:layout_height="100dp"
+						android:layout_gravity="center_horizontal"/>
+
+					<View
+						android:layout_width="match_parent"
+						android:layout_height="1dp"
+						android:background="#2d2d2d"/>
+
+					<TextView
+						android:fontFamily="@drawable/RobotoMedium"
+						android:textSize="16sp"
+						android:background="#06eade"
+						android:textColor="#2d2d2d"
+						android:layout_gravity="center_vertical"
+						android:gravity="center"
+						android:text="Типы данных. Целочисленный"
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"/>
+
+				</LinearLayout>
+
+			</android.support.v7.widget.CardView>
+			<android.support.v7.widget.CardView
+				android:layout_marginTop="10dp"
+				app:cardElevation="2dp"
+				android:layout_marginBottom="10dp"
+				android:layout_gravity="left"
+				android:layout_width="147dp"
+				android:layout_height="151dp">
+
+				<LinearLayout
+					android:background="#2d2d2d"
+					android:id="@+id/SixthQuiz"
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:orientation="vertical">
+
+					<ImageView
+						android:tint="#ffffff"
+						android:id="@+id/image7age"
+						android:layout_marginTop="8dp"
+						android:layout_marginBottom="2dp"
+						android:src="@drawable/age7"
+						android:layout_width="100dp"
+						android:layout_height="100dp"
+						android:layout_gravity="center_horizontal"/>
+
+					<View
+						android:layout_width="match_parent"
+						android:layout_height="1dp"
+						android:background="#ffffff"/>
+
+					<TextView
+						android:fontFamily="@drawable/RobotoMedium"
+						android:textSize="14sp"
+						android:background="#06eade"
+						android:textColor="#2d2d2d"
+						android:layout_gravity="center_vertical"
+						android:gravity="center"
+						android:text="Действительные числа"
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"/>
+
+				</LinearLayout>
+
+			</android.support.v7.widget.CardView>
+
+			<!-- Fourth Row -->
+			<android.support.v7.widget.CardView
+			
+				android:layout_marginTop="10dp"
+				android:layout_marginRight="30dp"
+				android:layout_gravity="right"
+				android:layout_width="147dp"
+				android:layout_height="151dp"
+				app:cardElevation="2dp"
+				android:layout_marginBottom="10dp">
+
+				<LinearLayout
+					android:background="#06eade"
+					android:id="@+id/SeventhQuiz"
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:orientation="vertical">
+
+					<ImageView
+						android:tint="#000000"
+						android:id="@+id/image8age"
+						android:layout_marginTop="8dp"
+						android:layout_marginBottom="2dp"
+						android:src="@drawable/age8"
+						android:layout_width="100dp"
+						android:layout_height="100dp"
+						android:layout_gravity="center_horizontal"/>
+
+					<View
+						android:layout_width="match_parent"
+						android:layout_height="1dp"
+						android:background="#ffffff"/>
+
+					<TextView
+						android:fontFamily="@drawable/RobotoMedium"
+						android:textSize="14sp"
+						android:background="#2d2d2d"
+						android:textColor="#ffffff"
+						android:layout_gravity="center_vertical"
+						android:gravity="center"
+						android:text="Логический тип данных. Bool"
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"/>
+
+				</LinearLayout>
+
+			</android.support.v7.widget.CardView>
+			<android.support.v7.widget.CardView
+				android:layout_marginTop="10dp"
+				app:cardElevation="2dp"
+				android:layout_marginBottom="10dp"
+				android:layout_gravity="left"
+				android:layout_width="147dp"
+				android:layout_height="151dp">
+
+				<LinearLayout
+					android:background="#06eade"
+					android:id="@+id/EightsQuiz"
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:orientation="vertical">
+
+					<ImageView
+						android:tint="#000000"
+						android:id="@+id/image9age"
+						android:layout_marginTop="8dp"
+						android:layout_marginBottom="2dp"
+						android:src="@drawable/age9"
+						android:layout_width="100dp"
+						android:layout_height="100dp"
+						android:layout_gravity="center_horizontal"/>
+
+					<View
+						android:layout_width="match_parent"
+						android:layout_height="1dp"
+						android:background="#ffffff"/>
+
+					<TextView
+						android:fontFamily="@drawable/RobotoMedium"
+						android:textSize="14sp"
+						android:textColor="#ffffff"
+						android:background="#2d2d2d"
+						android:layout_gravity="center_vertical"
+						android:gravity="center"
+						android:text="Символьный тип данных. Char"
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"/>
+
+				</LinearLayout>
+
+			</android.support.v7.widget.CardView>
+			
+			<!-- Fifth Row -->
+			<android.support.v7.widget.CardView
+
+				android:layout_marginTop="10dp"
+				android:layout_marginRight="30dp"
+				android:layout_gravity="right"
+				android:layout_width="147dp"
+				android:layout_height="151dp"
+				app:cardElevation="2dp"
+				android:layout_marginBottom="10dp">
+
+				<LinearLayout
+					android:background="#2d2d2d"
+					android:id="@+id/NinthQuiz"
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:orientation="vertical">
+
+					<ImageView
+						android:tint="#ffffff"
+						android:id="@+id/image10age"
+						android:layout_marginTop="8dp"
+						android:layout_marginBottom="2dp"
+						android:src="@drawable/age10"
+						android:layout_width="100dp"
+						android:layout_height="100dp"
+						android:layout_gravity="center_horizontal"/>
+
+					<View
+						android:layout_width="match_parent"
+						android:layout_height="1dp"
+						android:background="#dddddd"/>
+
+					<TextView
+						android:fontFamily="@drawable/RobotoMedium"
+						android:textSize="14sp"
+						android:background="#06eade"
+						android:textColor="#2d2d2d"
+						android:layout_gravity="center_vertical"
+						android:gravity="center"
+						android:text="Cтроки - массив «чаров»"
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"/>
+
+				</LinearLayout>
+
+			</android.support.v7.widget.CardView>
+			<android.support.v7.widget.CardView
+				android:layout_marginTop="10dp"
+				app:cardElevation="2dp"
+				android:layout_marginBottom="10dp"
+				android:layout_gravity="left"
+				android:layout_width="147dp"
+				android:layout_height="151dp">
+
+				<LinearLayout
+					android:background="#2d2d2d"
+					android:id="@+id/TenthQuiz"
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:orientation="vertical">
+
+					<ImageView
+						android:tint="#ffffff"
+						android:id="@+id/image11age"
+						android:layout_marginTop="8dp"
+						android:layout_marginBottom="2dp"
+						android:src="@drawable/age11"
+						android:layout_width="100dp"
+						android:layout_height="100dp"
+						android:layout_gravity="center_horizontal"/>
+
+					<View
+						android:layout_width="match_parent"
+						android:layout_height="1dp"
+						android:background="#ffffff"/>
+
+					<TextView
+						android:fontFamily="@drawable/RobotoMedium"
+						android:textSize="14sp"
+						android:background="#06eade"
+						android:textColor="#2d2d2d"
+						android:layout_gravity="center_vertical"
+						android:gravity="center"
+						android:text="Литералы"
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"/>
+
+				</LinearLayout>
+
+			</android.support.v7.widget.CardView>
+				
+			<!-- Sixth Row !!-->
+			<android.support.v7.widget.CardView
+				
+				android:layout_marginTop="10dp"
+				android:layout_marginRight="30dp"
+				android:layout_gravity="right"
+				android:layout_width="147dp"
+				android:layout_height="151dp"
+				app:cardElevation="2dp"
+				android:layout_marginBottom="10dp">
+
+				<LinearLayout
+					android:background="#06eade"
+					android:id="@+id/EleventhQuiz"
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:orientation="vertical">
+
+					<ImageView
+						android:tint="#000000"
+						android:id="@+id/image12age"
+						android:layout_marginTop="8dp"
+						android:layout_marginBottom="2dp"
+						android:src="@drawable/age12"
+						android:layout_width="100dp"
+						android:layout_height="100dp"
+						android:layout_gravity="center_horizontal"/>
+
+					<View
+						android:layout_width="match_parent"
+						android:layout_height="1dp"
+						android:background="#ffffff"/>
+
+					<TextView
+						android:fontFamily="@drawable/RobotoMedium"
+						android:textSize="14sp"
+						android:background="#2d2d2d"
+						android:textColor="#ffffff"
+						android:layout_gravity="center_vertical"
+						android:gravity="center"
+						android:text="Условие IF ELSE"
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"/>
+
+				</LinearLayout>
+
+			</android.support.v7.widget.CardView>
+			<android.support.v7.widget.CardView
+				android:layout_marginTop="10dp"
+				app:cardElevation="2dp"
+				android:layout_marginBottom="10dp"
+				android:layout_gravity="left"
+				android:layout_width="147dp"
+				android:layout_height="151dp">
+
+				<LinearLayout
+					android:background="#06eade"
+					android:id="@+id/TvelwthQuiz"
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:orientation="vertical">
+
+					<ImageView
+						android:tint="#000000"
+						android:id="@+id/image13age"
+						android:layout_marginTop="8dp"
+						android:layout_marginBottom="2dp"
+						android:src="@drawable/age13"
+						android:layout_width="100dp"
+						android:layout_height="100dp"
+						android:layout_gravity="center_horizontal"/>
+
+					<View
+						android:layout_width="match_parent"
+						android:layout_height="1dp"
+						android:background="#ffffff"/>
+
+					<TextView
+						android:fontFamily="@drawable/RobotoMedium"
+						android:textSize="14sp"
+						android:textColor="#ffffff"
+						android:background="#2d2d2d"
+						android:layout_gravity="center_vertical"
+						android:gravity="center"
+						android:text="Цикл for"
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"/>
+
+				</LinearLayout>
+
+			</android.support.v7.widget.CardView>
+
+			<!-- Seventh Row -->
+			<android.support.v7.widget.CardView
+				
+				android:layout_marginTop="10dp"
+				android:layout_marginRight="30dp"
+				android:layout_gravity="right"
+				android:layout_width="147dp"
+				android:layout_height="151dp"
+				app:cardElevation="2dp"
+				android:layout_marginBottom="10dp">
+
+				<LinearLayout
+					android:background="#2d2d2d"
+					android:id="@+id/ThirteenthQuiz"
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:orientation="vertical">
+
+					<ImageView
+						android:tint="#ffffff"
+						android:id="@+id/image14age"
+						android:layout_marginTop="8dp"
+						android:layout_marginBottom="2dp"
+						android:src="@drawable/age14"
+						android:layout_width="100dp"
+						android:layout_height="100dp"
+						android:layout_gravity="center_horizontal"/>
+
+					<View
+						android:layout_width="match_parent"
+						android:layout_height="1dp"
+						android:background="#dddddd"/>
+
+					<TextView
+						android:fontFamily="@drawable/RobotoMedium"
+						android:textSize="14sp"
+						android:background="#06eade"
+						android:textColor="#2d2d2d"
+						android:layout_gravity="center_vertical"
+						android:gravity="center"
+						android:text="Цикл while"
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"/>
+
+				</LinearLayout>
+
+			</android.support.v7.widget.CardView>
+			<android.support.v7.widget.CardView
+				android:layout_marginTop="10dp"
+				app:cardElevation="2dp"
+				android:layout_marginBottom="10dp"
+				android:layout_gravity="left"
+				android:layout_width="147dp"
+				android:layout_height="151dp">
+
+				<LinearLayout
+					
+					android:background="#e2908b"
+					android:id="@+id/FourteenthQuiz"
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:orientation="vertical">
+
+					<ImageView
+						android:tint="#000000"
+						android:id="@+id/image15age"
+						android:layout_marginTop="8dp"
+						android:layout_marginBottom="2dp"
+						android:src="@drawable/age15"
+						android:layout_width="100dp"
+						android:layout_height="100dp"
+						android:layout_gravity="center_horizontal"/>
+
+					<View
+						android:layout_width="match_parent"
+						android:layout_height="1dp"
+						android:background="#2d2d2d"/>
+
+					<TextView
+						android:fontFamily="@drawable/RobotoMedium"
+						android:textSize="15sp"
+						android:background="#2d2d2d"
+						android:textColor="#ffffff"
+						android:layout_gravity="center_vertical"
+						android:gravity="center"
+						android:text="Итоговый тест"
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"/>
+
+				</LinearLayout>
+
+			</android.support.v7.widget.CardView>
+				
+
+		</GridLayout>
+
+			<TextView
+				android:textSize="14sp"
+				android:fontFamily="@drawable/RobotoMedium"
+				android:textColor="#2d2d2d"
+				android:layout_marginBottom="10dp"
+				android:gravity="center"
+				android:text="Cовсем скоро новые уровни"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+			
+		</LinearLayout>
+
+	</ScrollView>
+
+</LinearLayout>

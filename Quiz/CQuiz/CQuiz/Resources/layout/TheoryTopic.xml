@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+         android:fontFamily="@drawable/RobotoBold"
+         android:textColor="#7a7a7a"
+         android:gravity="center"
+         android:id="@+id/topicView"
+         android:textStyle="bold"
+         android:text="Topic"
+         android:textSize="20sp"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+      <LinearLayout
+        android:id="@+id/LinTheme"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+	    xmlns:app="http://schemas.android.com/apk/res-auto"
+	    xmlns:tools="http://schemas.android.com/tools"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        
+         <TextView
+               android:fontFamily="@drawable/RobotoMedium"
+               android:textColor="#9b9b9b"
+               android:gravity="left"
+               android:layout_margin="10dp"
+               android:id="@+id/themeDescription"
+               android:textStyle=""
+               android:text="Тема описание и примеры приложений"
+               android:textSize="17sp"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"/>
+
+          <Button
+               android:gravity="center"
+               android:textSize="18sp"
+               android:fontFamily="@drawable/RobotoLight"
+               android:layout_gravity="center_horizontal"
+               android:textColor="@android:color/white"
+               android:layout_centerHorizontal="true"
+               android:layout_alignParentBottom="true"
+               android:layout_marginBottom="50dp"
+               android:id="@+id/buttoStartQuiz"
+               android:text="Начать Quiz"
+               android:textStyle="bold"
+               android:background="@drawable/roundbutton"
+               android:layout_width="200dp"
+               android:layout_height="40dp"/>
+          </LinearLayout>
+      </ScrollView>
+
+</LinearLayout>

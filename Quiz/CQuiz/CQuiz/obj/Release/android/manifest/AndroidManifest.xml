@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="7" android:versionName="7.1" package="la.c_quiz">
+  <uses-sdk android:minSdkVersion="25" android:targetSdkVersion="29" />
+  <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+  <application android:allowBackup="true" android:icon="@mipmap/ic_launcher_c" android:label="@string/app_name" android:supportsRtl="true" android:theme="@style/AppTheme" android:name="android.app.Application" android:extractNativeLibs="true">
+    <activity android:label="@string/app_name" android:theme="@style/AppTheme" android:name="crc64e58dc5e1616f264b.MainActivity" />
+    <activity android:label="ActivityAboutUs" android:name="crc6487344babf955990e.ActivityAboutUs" />
+    <activity android:label="DescriptionActivity" android:theme="@style/AppTheme" android:name="crc6487344babf955990e.DescriptionActivity" />
+    <activity android:label="QuizActivity" android:name="crc6487344babf955990e.QuizActivity" />
+    <activity android:label="@string/app_name" android:noHistory="true" android:theme="@style/Mytheme.Splash" android:name="crc6487344babf955990e.SplashActivity">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+        <category android:name="android.intent.category.LAUNCHER" />
+      </intent-filter>
+    </activity>
+    <provider android:name="mono.MonoRuntimeProvider" android:exported="false" android:initOrder="1999999999" android:authorities="la.c_quiz.mono.MonoRuntimeProvider.__mono_init__" />
+  </application>
+  <uses-permission android:name="android.permission.INTERNET" />
+</manifest>

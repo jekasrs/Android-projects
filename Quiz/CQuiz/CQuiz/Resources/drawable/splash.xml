@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <item>
+        <color android:color="#92beff"/>
+    </item>
+    
+    <item>
+        <bitmap
+            android:layout_height="fill_parent"
+            android:layout_width="fill_parent"
+            android:gravity="center"
+            android:src="@mipmap/splsh"
+            android:tileMode="disabled"
+        />
+    </item>
+</layer-list>

@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+     <ImageView
+        android:layout_marginTop="20dp"
+        android:id="@+id/image"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/Win"/>
+     
+        <TextView
+            android:fontFamily="@drawable/RobotoLight"
+            android:id="@+id/scoreTextView"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:textSize="25sp"
+            android:text="4/5"
+            android:textColor="#06eade"
+        />
+
+<TextView
+        android:fontFamily="@drawable/RobotoBold"
+        android:id="@+id/remarksTextView"
+        android:text="Very good result, you really tried"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:layout_marginTop="10dp"/>
+
+       <Button
+        android:gravity="center"
+        android:textSize="18sp"
+        android:fontFamily="@drawable/RobotoLight"
+        android:text="Домой"
+        android:layout_height="36dp"
+        android:layout_width="200dp"
+        android:background="@drawable/roundbutton"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="10dp"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/goHomeButton"/>
+</LinearLayout>
